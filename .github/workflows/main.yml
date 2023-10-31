@@ -13,8 +13,11 @@ jobs:
      runs-on: ubuntu-latest
 
      steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4.7.1
         with:
           python-version: '3.10' 
-      - run: python tests_training.py
+      - name: install requirements  
+        run: pip install -r requirements.txt
+      - name: unit tests
+        run: python tests_training.py
