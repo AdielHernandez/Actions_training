@@ -22,4 +22,6 @@ jobs:
           python-version: '3.11'  
 
       - name: requirements
-        run: echo "Hola"
+        run: |
+         pip install pytest pytest-cov
+         pytest test_training.py
