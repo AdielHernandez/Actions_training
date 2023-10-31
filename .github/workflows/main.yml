@@ -23,5 +23,5 @@ jobs:
 
       - name: requirements
         run: |
-         pip install pytest pytest-cov
+         pip install pytest
          pytest test_training.py
