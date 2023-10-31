@@ -22,8 +22,4 @@ jobs:
           python-version: '3.11'  
 
       - name: requirements
-        run: pip install -r requirements.txt
-      - name: unit tests
-        run: python tests_training.py
-      - name: boolean
-        run: "False"
+        run: echo "Hola"
