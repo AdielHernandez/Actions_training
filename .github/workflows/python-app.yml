@@ -18,11 +18,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python 3.11
+    - name: checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
       uses: actions/setup-python@4
       with:
         python-version: "3.11"
+        
     - name: Test with pytest
       run: |
         pip install pytest pytest-cov
