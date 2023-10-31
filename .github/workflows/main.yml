@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.11'  
 
-      - name: requirements
+      - name: unit tests
         run: |
          pip install pytest
          pytest tests_training.py
