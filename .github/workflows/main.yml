@@ -24,4 +24,4 @@ jobs:
       - name: requirements
         run: |
          pip install pytest
-         pytest test_training.py
+         pytest tests_training.py
